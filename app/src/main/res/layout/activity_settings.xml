@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".activities.SettingsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="الاعدادت"
+        app:titleTextColor="@color/white_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/container1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="فاتح"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="داكن"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="المظهر"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="كبير"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonMiddle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="وسط"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="صغير"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="حجم الخطوط"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

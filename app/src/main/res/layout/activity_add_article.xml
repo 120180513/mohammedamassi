@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".activities.AddArticleActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="vertical"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/toolbar"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:title="اضافة مقال"
+                app:titleTextColor="@color/white_toolbar" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:background="#A1887F"
+                android:ems="10"
+                android:gravity="top|right"
+                android:hint="اكتب النص..."
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColor="@color/text_add_article"
+                android:textColorHint="@color/text_add_article" />
+
+            <Button
+                android:id="@+id/buttonAddImage"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="10dp"
+                android:background="@drawable/shape_add_image"
+                android:text="اضف صورة"
+                android:textColor="@color/text_add_article"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/checkbox_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:paddingEnd="20dp"
+                android:layoutDirection="rtl">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="اختر قسم الموضوع"
+                    android:textColor="@color/text_add_article2"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+                <CheckBox
+                    android:id="@+id/checkBoxDoors"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ابواب المدينة"
+                    android:textColor="@color/text_add_article2"
+                    android:textSize="16dp"/>
+
+                <CheckBox
+                    android:id="@+id/checkBoxHistory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="تاريخ المدينة"
+                    android:textColor="@color/text_add_article2"
+                    android:textSize="16dp"/>
+
+                <CheckBox
+                    android:id="@+id/checkBoxLandmarks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="معالم المدينة"
+                    android:textColor="@color/text_add_article2"
+                    android:textSize="16dp"/>
+
+                <CheckBox
+                    android:id="@+id/checkBoxNeighboringTowns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="المدن المجاورة"
+                    android:textColor="@color/text_add_article2"
+                    android:textSize="16dp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/shape_main"
+                android:text="حفظ المقال"
+                android:textColor="@color/text_add_article"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
